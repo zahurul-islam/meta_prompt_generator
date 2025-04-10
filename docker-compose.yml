@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  meta-prompt-generator:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "7860:7860"  # Expose Gradio UI port
+    env_file:
+      - .env  # Use environment variables from .env file if it exists
+    environment:
+      # Default API key if not provided in .env
+      - OPENROUTER_API_KEY=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
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./src:/app/src
+      - ./templates:/app/templates
+    restart: unless-stopped
+    networks:
+      - meta-prompt-network
+
+networks:
+  meta-prompt-network:
+    driver: bridge

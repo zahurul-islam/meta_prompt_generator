@@ -41,28 +41,23 @@ class ImageExtractor:
         
         # Available models with vision capabilities
         self.vision_models = {
-            "OpenAI GPT-4 Vision": {
-                "id": "openai/gpt-4-vision-preview",
+            "Google Gemini 2.5 Pro": {
+                "id": "google/gemini-2.5-pro-exp-03-25:free",
                 "api_url": "https://openrouter.ai/api/v1/chat/completions",
                 "max_tokens": 4096
             },
-            "Anthropic Claude 3 Opus": {
-                "id": "anthropic/claude-3-opus-20240229",
+            "Quasar Alpha": {
+                "id": "openrouter/quasar-alpha",
                 "api_url": "https://openrouter.ai/api/v1/chat/completions",
                 "max_tokens": 4096
             },
-            "Anthropic Claude 3 Sonnet": {
-                "id": "anthropic/claude-3-sonnet-20240229",
+            "DeepSeek Chat v3": {
+                "id": "deepseek/deepseek-chat-v3-0324:free",
                 "api_url": "https://openrouter.ai/api/v1/chat/completions",
                 "max_tokens": 4096
             },
-            "Anthropic Claude 3 Haiku": {
-                "id": "anthropic/claude-3-haiku-20240307",
-                "api_url": "https://openrouter.ai/api/v1/chat/completions",
-                "max_tokens": 4096
-            },
-            "Google Gemini Pro Vision": {
-                "id": "google/gemini-pro-vision",
+            "Meta Llama 4 Maverick": {
+                "id": "meta-llama/llama-4-maverick:free",
                 "api_url": "https://openrouter.ai/api/v1/chat/completions",
                 "max_tokens": 4096
             }

@@ -113,7 +113,7 @@ Format your response as a JSON object with the appropriate structure for the req
 Guidelines:
 1. If certain information is not present in the document, use null for that field or omit the field entirely.
 2. Convert all monetary values to numbers (not strings).
-3. Use consistent date formatting (YYYY-MM-DD).
+3. Use consistent date formatting (DD-MM-YYYY).
 4. If you're uncertain about any information, include a "confidence" field with a value between 0 and 1.
 5. Extract the data exactly as it appears without making assumptions or adding information not present in the document.
 6. Only include the JSON in your response, with no additional explanation or commentary.

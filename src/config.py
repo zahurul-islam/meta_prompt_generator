@@ -9,14 +9,14 @@ load_dotenv()
 # API Configuration
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
-OPENROUTER_MODEL = "anthropic/claude-3-haiku@20240307"  
+OPENROUTER_MODEL = "google/gemini-2.5-pro-exp-03-25:free"  
 
 # Backup models in case the primary one fails
 BACKUP_MODELS = [
-    "anthropic/claude-3-haiku@20240307",
-    "anthropic/claude-3-sonnet@20240229",
-    "openai/gpt-3.5-turbo",
-    "google/gemini-pro"
+    "google/gemini-2.5-pro-exp-03-25:free",
+    "openrouter/quasar-alpha",
+    "deepseek/deepseek-chat-v3-0324:free",
+    "meta-llama/llama-4-maverick:free"
 ]
 
 # System Messages
